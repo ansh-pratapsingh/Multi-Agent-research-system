@@ -1,15 +1,14 @@
 # Core LangChain (LCEL / Runnables based — no legacy Chain classes)
-# Version numbers intentionally left unpinned for these so pip/uv can
-# resolve a mutually-compatible set together (this ecosystem moves fast).
-langchain
-langchain-core
-langchain-community
+# Pinned exact versions so local and cloud environments behave identically
+langchain==0.3.7
+langchain-core==0.3.15
+langchain-community==0.3.5
 
 # Agent framework (React-style agents run via LangGraph's agent executor)
-langgraph
+langgraph==0.2.45
 
 # LLM provider (Groq — free tier, fast inference, no billing required)
-langchain-groq
+langchain-groq==0.2.1
 
 # Search tool
 tavily-python==0.5.0
@@ -22,5 +21,7 @@ requests==2.32.3
 python-dotenv==1.0.1
 
 # Data validation (used internally by LangChain)
-pydantic 
+pydantic
+
+# Web UI
 streamlit
